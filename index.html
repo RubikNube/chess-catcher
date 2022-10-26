@@ -1,0 +1,50 @@
+<!DOCTYPE html> <html xmlns="http://www.w3.org/1999/xhtml" lang="de-DE">
+    <title>Chess-Catcher</title>
+    <head>
+        <script src="./scripts/javascript/jquery-3.2.1.min.js" type="text/javascript"></script>
+        <script src="./scripts/javascript/chesscatcher.js" type="text/javascript"></script>
+        <link href="./scripts/css/chess.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div class="alert success" style="display: none;">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            Du hast gewonnen!
+        </div>
+        <div class="alert failure" style="display: none;">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            Du hast verloren!
+        </div>
+        <div id="game">
+            <div id="board"></div>
+            <div class="form">
+                <form>
+                    <label for="nSteps">Anzahl der Spielzüge:</label>
+                    <input id="nSteps" max="20" min="1" name="nSteps" type="number" value="6">
+                    <label for="selectedPiece">Figur:</label>
+                    <select id="selectedPiece">
+                        <option value="king"><br/>
+                            König<br/>
+                        </option>
+                        <option value="queen"><br/>
+                            Königin<br/>
+                        </option>
+                        <option value="rook"><br/>
+                            Turm<br/>
+                        </option>
+                        <option value="bishop"><br/>
+                            Läufer<br/>
+                        </option>
+                        <option value="knight"><br/>
+                            Springer<br/>
+                        </option>
+                    </select>
+                    <input class="button" id="generateButton" type="button" value="Neues Spiel">
+                    <input class="button" id="repeatGame" type="button" value="Spiel wiederholen">
+                    <input class="button" id="showSolution" type="button" value="Lösung vorführen"><br/>
+                </form>
+            </p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,234 @@
+html {
+    height: 98%;
+    width: 98%
+}
+
+.curtain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: #000;
+    opacity: .5
+}
+
+body {
+    z-index: -1000;
+    text-decoration: none;
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-family: arial, "lucida console", sans-serif
+}
+
+input[type=number], input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box
+}
+
+select {
+    width: 100%;
+    padding: 16px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1
+}
+
+input[type=button] {
+    width: 100%;
+    background-color: #4b884b;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #296629;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+    display: block;
+    margin-bottom: 10px
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
+
+input[type=number] {
+    -moz-appearance: textfield
+}
+
+input[type=button]:hover {
+    background-color: #6daa6d;
+    color: #fff
+}
+
+input[type=button]:active {
+    background-color: #6daa6d;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px)
+}
+
+input[type=number]:focus, select:focus {
+    background-color: #f5fff5
+}
+
+label {
+    padding: 20px;
+    width: 100%;
+    text-align: left
+}
+
+div.form {
+    border-radius: 5px;
+    background-color: #ddc477;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid #296629;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19)
+}
+
+.alert {
+    position: fixed;
+    font-size: 16px;
+    text-decoration: none;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    margin-bottom: 15px;
+    pointer-events: all;
+    font-family: arial, "lucida console", sans-serif
+}
+
+.alert.success {
+    background-color: #4CAF50
+}
+
+.alert.failure {
+    background-color: #f44336
+}
+
+.closebtn {
+    color: #fff;
+    font-weight: 700;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: .3s;
+    margin-right: 50px
+}
+
+.closebtn:hover {
+    color: #000
+}
+
+#game {
+    margin: auto;
+    height: 95%;
+    width: 95%;
+    z-index: 100
+}
+
+.board-container {
+    border: #00f;
+    border-width: 10px;
+    padding: 10px
+}
+
+#board {
+    height: 100%;
+    box-sizing: content-box;
+    border: solid #296629;
+    border-width: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+    background-color: #296629
+}
+
+#game>form {
+    margin: 10px;
+    padding: 10px
+}
+
+.square {
+    background-size: contain;
+    position: absolute
+}
+
+.white {
+    background-color: #dfbf9f
+}
+
+.black {
+    background-color: #963
+}
+
+.white.marked {
+    background-color: #ff9f80
+}
+
+.black.marked {
+    background-color: #f63
+}
+
+.wq {
+    background-image: url(../../images/Chess_qlt60.png)
+}
+
+.wk {
+    background-image: url(../../images/Chess_klt60.png)
+}
+
+.wn {
+    background-image: url(../../images/Chess_nlt60.png)
+}
+
+.wp {
+    background-image: url(../../images/Chess_plt60.png)
+}
+
+.wb {
+    background-image: url(../../images/Chess_blt60.png)
+}
+
+.wr {
+    background-image: url(../../images/Chess_rlt60.png)
+}
+
+.bq {
+    background-image: url(../../images/Chess_qdt60.png)
+}
+
+.bk {
+    background-image: url(../../images/Chess_kdt60.png)
+}
+
+.bn {
+    background-image: url(../../images/Chess_ndt60.png)
+}
+
+.bp {
+    background-image: url(../../images/Chess_pdt60.png)
+}
+
+.bb {
+    background-image: url(../../images/Chess_bdt60.png)
+}
+
+.br {
+    background-image: url(../../images/Chess_rdt60.png)
+}
